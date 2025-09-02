@@ -1,0 +1,28 @@
+Version: 1.0
+ProjectId: c076dfbf-de87-4311-9a95-b4c4b29a97d1
+
+RestoreWorkspace: No
+SaveWorkspace: No
+AlwaysSaveHistory: No
+
+EnableCodeIndexing: Yes
+UseSpacesForTab: Yes
+NumSpacesForTab: 2
+Encoding: UTF-8
+
+RnwWeave: Sweave
+LaTeX: pdfLaTeX
+
+AutoAppendNewline: Yes
+StripTrailingWhitespace: Yes
+LineEndingConversion: Native
+
+BuildType: Package
+PackageUseDevtools: Yes
+PackageInstallArgs: --no-multiarch --with-keep.source
+
+UseNativePipeOperator: Yes
+
+QuitChildProcessesOnExit: Yes
+
+SpellingDictionary: en_GB

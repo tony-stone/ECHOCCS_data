@@ -1,0 +1,22 @@
+source("r/private/_config.r")
+# Stage 1
+diagnoses_data_directory <- "APC_diagnoses"
+births_deaths_name = "births_deaths"
+infants_records_name <- "infants_records"
+nhs_dfe_id_lookup_name <- "nhs_dfe_id_lookup"
+education_data_directory <- "education_data"
+edu_census_name <- "census_data"
+edu_absence_name <- "absence_data"
+edu_absence_consolidated_name <- "absence_data_consolidated"
+mothers_information_name <- "mothers_information"
+# Stage 2
+birth_cohort_name <- "birth_cohort"
+cancer_diagnoses_name <- "cancer_diagnoses"
+congenital_diagnoses_name <- "congenital_diagnoses"
+# Stage 3
+birth_information_name <- "birth_information"
+education_data_combined_name <- "education_data_combined"
+ethnicity_geo_name <- "ethnicity_geo_information"
+absence_send_combined_name <- "absence_send_combined"
+# Stage 4
+echoccs_cohort_name <- "echoccs_cohort"
