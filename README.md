@@ -5,6 +5,43 @@ and longer-term <u>H</u>ealth <u>O</u>utcomes for <u>C</u>hildhood
 <u>C</u>ancer <u>S</u>urvivors (ECHO-CCS) project. The `_main.r` file is the 
 primary *runner*.
 
+## Project / Funding / Acknowledgements / Disclaimers
+
+The Education and longer-term Health Outcomes for Childhood Cancer Survivors 
+(ECHO-CCS) project is using the [ECHILD Research Database](https://www.echild.ac.uk)
+to bring to gether information existing data recorded in schools and hospitals. This 
+allows us to gain a better understanding of school absences, attainment and Special 
+Educational Needs provision, before, during and after a cancer diagnosis in childhood.
+We will look at a range of childhood cancers, including leukaemia, lymphoma and 
+central nervous system cancers.
+
+The project aims to add to the evidence on outcomes for childhood cancer survivors, 
+to enable us to make informed decisions about how best to support children with cancer.
+
+The project is led by Prof Katie Harron and the project team are based at the 
+[UCL Great Ormond Street Institute of Child Health](https://www.ucl.ac.uk/population-health-sciences/child-health).
+
+The ECCHO-CCS research project is jointly funded by 
+[Cancer Research UK](https://news.cancerresearchuk.org/2024/05/29/harnessing-the-power-of-data-for-paediatric-cancer-research/)
+(award ref: CDEPIL-Jan24/100002) and 
+[Children with Cancer UK](https://www.childrenwithcancer.org.uk/childhood-cancer-info/we-fund-research/projects-we-fund/childhood-cancer-diagnosis-impact-school-attendance/).
+
+The ECHILD Research Database uses data provided by patients and collected by the 
+National Health Service as part of their care and support. Source data can also 
+be accessed by researchers by applying to NHS England. 
+
+The ECHILD Research Database uses data from the Department for Education (DfE). The DfE
+does not accept responsibility for any inferences or conclusions derived by the authors.
+
+We are grateful to the Office for National Statistics (ONS) for providing the trusted 
+research environment for the ECHILD Research Database. ONS agrees that the contents of 
+this repository may be published. This does not imply ONS's acceptance of the validity 
+of the code files, etc., therein, nor the processing detailed within such code files.
+
+The ECHILD research database released 30 July 2024, University College London, ONS SRS
+Metadata Catalogue, dataset, Education and Child Health Insights from Linked Data -
+England, https://doi.org/10.57906/j1gr-gm30
+
 ## Introduction
 
 Cohort generation is non-trivial. Broadly, the files are prefixed with a 
