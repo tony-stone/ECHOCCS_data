@@ -10,15 +10,18 @@ collateCancerDiagnoses <- function(conn,
   # Includes all malignant tumours (ICD10 Chapter C codes) and all non-malignant
   # brain, and other CNS and intracranial tumours (ICD10 Chapter D codes).
 
-  cancer_diag_groupings <- rbind(data.table(diagnosis_3char = c(paste0("C", sprintf("%02d", 0:97)),
+  cancer_diag_groupings <- rbind(data.table(diagnosis_3char = c(paste0("C", sprintf("%02d", c(0:74, 76:97))),
                                                                 paste0("D", c(32, 33, 42, 43))),
                                             diagnosis_4char = as.character(NA)),
                                  data.table(diagnosis_3char = as.character(NA),
-                                            diagnosis_4char = paste0("D", c(352:354, 443:445))))
+                                            diagnosis_4char = c(paste0("C", 750:759),
+                                                                paste0("D", c(352:354, 443:445)))))
 
   cancer_diag_groupings[, cancer_group := "Other"]
   cancer_diag_groupings[diagnosis_3char %in% c(paste0("C", c(70:72)),
-                                               paste0("D", c(32, 33, 42, 43))),
+                                               paste0("D", c(32, 33, 42, 43))) |
+                          diagnosis_4char %in% c(paste0("C", c(751:753)),
+                                                 paste0("D", c(352:354, 443:445))),
                         cancer_group := "Brain / CNS"]
   cancer_diag_groupings[diagnosis_3char %in% paste0("C", c(81:86)),
                         cancer_group := "Lymphoma"]
