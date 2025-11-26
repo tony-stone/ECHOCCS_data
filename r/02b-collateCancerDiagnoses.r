@@ -20,10 +20,10 @@ collateCancerDiagnoses <- function(conn,
   cancer_diag_groupings[, cancer_group := "Other"]
   cancer_diag_groupings[diagnosis_3char %in% c(paste0("C", c(70:72)),
                                                paste0("D", c(32, 33, 42, 43))) |
-                          diagnosis_4char %in% c(paste0("C", c(752:754)),
+                          diagnosis_4char %in% c(paste0("C", c(751:753)),
                                                  paste0("D", c(352:354, 443:445))),
                         cancer_group := "Brain / CNS"]
-  cancer_diag_groupings[diagnosis_3char %in% paste0("C", c(81:89, 96)),
+  cancer_diag_groupings[diagnosis_3char %in% paste0("C", c(81:86, 88, 96)),
                         cancer_group := "Lymphoma"]
   cancer_diag_groupings[diagnosis_3char %in% paste0("C", c(90:95)),
                         cancer_group := "Leukaemia"]
